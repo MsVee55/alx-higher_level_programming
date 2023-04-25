@@ -1,4 +1,5 @@
-// Javascript script that updates the text color of the <header> element to red (#FF0000)
-
-const colorH = document.querySelector('header');
-colorH.style.color = '#FF0000';
+#!/usr/bin/node
+const fs = require('fs');
+fs.readFile(process.argv[2], 'utf8', function (error, content) {
+  console.log(error || content);
+});
